@@ -18,5 +18,5 @@ class E_wallet_service:
     def check_balance(self):
         raise NotImplementedError
 
-    def transfer(self):
+    def payment(self):
         raise NotImplementedError

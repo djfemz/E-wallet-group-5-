@@ -7,7 +7,7 @@ from utils.mapper import Mapper
 e_wallet: E_wallet_repo_impl
 
 
-class E_wallet_service_repo(E_wallet_service):
+class E_wallet_service_impl(E_wallet_service):
     def register_user(self, request: Register_request):
         e_wallet.save(Mapper.map(request))
         return "Registration successful.."
@@ -25,5 +25,5 @@ class E_wallet_service_repo(E_wallet_service):
     def check_balance(self):
         pass
 
-    def transfer(self):
+    def payment(self):
         pass
