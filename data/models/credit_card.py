@@ -54,7 +54,11 @@ class CreditCard:
     def get_id(self):
         return self.id
 
+<<<<<<< HEAD
     def _str_(self):
+=======
+    def __str__(self):
+>>>>>>> de5e2dea8759a6e2d3c1f0477dee9dcfd34d6788
         return f"""
                     ==========
                     id: {self.id}
