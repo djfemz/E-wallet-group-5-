@@ -53,3 +53,17 @@ class CreditCard:
 
     def get_id(self):
         return self.id
+
+    def _str_(self):
+        return f"""
+                    ==========
+                    id: {self.id}
+                    card_number: {self.card_number}
+                    balance: {self.balance}
+                    cvv:{self.cvv}
+                    expiry_date:{self.expiry_date}
+                    first_name:{self.first_name}
+                    last_name:{self.last_name}
+                    dob:{self.dob}
+                    ==========
+                    """

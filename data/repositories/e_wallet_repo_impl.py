@@ -3,7 +3,8 @@ from data.models.wallet import EWallet
 
 
 class E_wallet_repo_impl(E_wallet_repo):
-    def init(self):
+
+    def __init__(self):
         self.__entries: list[EWallet] = []
         self.count = 0
 
@@ -19,3 +20,12 @@ class E_wallet_repo_impl(E_wallet_repo):
         for i in self.__entries:
             if i.get_id() == id:
                 return i
+            else:
+                return "Not found.."
+
+    def     find_by_username_and_password(self, username, password):
+        for i in self.__entries:
+            if i.get_username() and i.get_password() == username and password:
+                return i
+            else:
+                return "Not found.."
