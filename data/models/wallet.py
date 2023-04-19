@@ -7,16 +7,15 @@ class EWallet:
         self.first_name = str
         self.last_name = str
         self.password = str
-        self.userName = str
-        self.id = int
         self.username = str
+        self.id = int
 
     def set_id(self, id):
         self.id = id
 
     def get_id(self):
         return self.id
-
+    
     def set_first_name(self, name):
         self.first_name = name
 
@@ -52,7 +51,3 @@ class EWallet:
 
                      ==========
                      """
-
-
-
-
