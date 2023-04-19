@@ -9,7 +9,7 @@ class CreditCard:
         self.last_name = last_name,
         self.dob = dob
 
-    def card_number(self, value):
+    def set_card_number(self, value):
         self.card_number = value
 
     def get_card_number(self):
@@ -47,6 +47,9 @@ class CreditCard:
 
     def set_dob(self, value):
         self.dob = value
+        
+    def get_dob(self):
+        return self.dob
 
     def set_id(self, value):
         self.id = value
@@ -54,11 +57,7 @@ class CreditCard:
     def get_id(self):
         return self.id
 
-<<<<<<< HEAD
-    def _str_(self):
-=======
     def __str__(self):
->>>>>>> de5e2dea8759a6e2d3c1f0477dee9dcfd34d6788
         return f"""
                     ==========
                     id: {self.id}

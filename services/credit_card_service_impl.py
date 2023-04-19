@@ -1,2 +1,0 @@
-
-class Credit_card_service_impl(Credit_card_service):
