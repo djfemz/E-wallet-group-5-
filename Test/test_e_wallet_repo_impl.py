@@ -27,7 +27,7 @@ class Test_e_wallet(TestCase):
         self.e_wallet.save(self.wallet)
         self.assertEqual(1, self.wallet.get_id())
         self.wallet2 = EWallet()
-        self.wallet2.set_first_name("felix2")
+        self.wallet2.set_first_name("felix3")
         self.wallet2.set_last_name("ezeike2")
         self.wallet2.set_userName("felixezeike2")
         self.wallet2.set_password("1111")

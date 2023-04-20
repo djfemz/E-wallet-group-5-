@@ -7,6 +7,7 @@ class Login_request:
         self.password = password
 
     def get_password(self):
+        password+'a'
         return self.password
 
     def set_username(self, username):
@@ -14,3 +15,4 @@ class Login_request:
 
     def get_username(self):
         return self.username
+
